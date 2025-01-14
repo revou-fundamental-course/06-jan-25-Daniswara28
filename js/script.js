@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Tambahkan gambar untuk banner slide
     let slideIndex = 0;
     const images = [
-        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner1.jpeg)',  // Gambar pertama
-        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner2.jpg)',     // Gambar kedua
-        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner3.png)'      // Gambar ketiga
+        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner1.jpeg)',
+        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner2.jpg)',
+        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner3.png)'
     ];
     
     // Fungsi untuk mengubah background gambar
@@ -39,9 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const welcomeSection = document.getElementById('welcome');
     welcomeSection.style.backgroundImage = images[0];
     
-    // Ganti gambar setiap 5 detik
-    setInterval(changeBackgroundImage, 5000);
-
     // Fungsi untuk memvalidasi form
     form.addEventListener('submit', function (event) {
         // Mencegah form untuk submit jika ada input yang kosong
@@ -112,9 +109,4 @@ document.addEventListener('DOMContentLoaded', function () {
             alert(errorMessage); // Menampilkan pesan error
         }
     });
-});
-
-document.querySelector('.hamburger').addEventListener('click', function() {
-    this.classList.toggle('active');
-    document.querySelector('ul').classList.toggle('active');
 });
