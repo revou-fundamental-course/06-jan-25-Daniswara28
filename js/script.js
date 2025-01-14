@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Tambahkan gambar untuk banner slide
     let slideIndex = 0;
     const images = [
-        'url("../src/banner1.jpeg")',  // Gambar pertama
-        'url("../src/banner2.jpg")',     // Gambar kedua
-        'url("../src/banner3.png")'      // Gambar ketiga
+        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner1.jpeg)',  // Gambar pertama
+        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner2.jpg)',     // Gambar kedua
+        'url(https://revou-fundamental-course.github.io/06-jan-25-Daniswara28/src/banner3.png)'      // Gambar ketiga
     ];
     
     // Fungsi untuk mengubah background gambar
