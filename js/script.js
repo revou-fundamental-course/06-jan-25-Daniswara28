@@ -25,19 +25,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // Fungsi untuk mengubah background gambar
     function changeBackgroundImage() {
         const welcomeSection = document.getElementById('welcome');
-        
-        // Ganti background image berdasarkan indeks
-        slideIndex++;
-        if (slideIndex >= images.length) {
-            slideIndex = 0; // Reset ke gambar pertama
+        if (welcomeSection) {
+            // Ganti background image berdasarkan indeks
+            slideIndex = (slideIndex + 1) % images.length; // Loop kembali ke awal
+            welcomeSection.style.backgroundImage = images[slideIndex];
         }
-        
-        welcomeSection.style.backgroundImage = images[slideIndex];
     }
 
     // Set gambar pertama langsung saat halaman dimuat
     const welcomeSection = document.getElementById('welcome');
-    welcomeSection.style.backgroundImage = images[0];
+    if (welcomeSection) {
+        welcomeSection.style.backgroundImage = images[0];
+    }
+
+    // Ganti gambar setiap 5 detik
+    setInterval(changeBackgroundImage, 5000);
+
     
     // Fungsi untuk memvalidasi form
     form.addEventListener('submit', function (event) {
