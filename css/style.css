@@ -332,8 +332,8 @@ textarea {
 }
 
 button {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #e6c34f;
+    color: black;
     cursor: pointer;
     border: none;
     padding: 0.7em 1.5em;
@@ -343,7 +343,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #bda143;
 }
 
 .message-output p {
